@@ -64,4 +64,9 @@ Vue.createApp({
       return (this.page = index + 1);
     },
   },
+  watch: {
+    page(newValue, oldValue) {
+      console.log(`Новое значение:${newValue} | Старое значение:${oldValue}`);
+    },
+  }
 }).mount("#app");
