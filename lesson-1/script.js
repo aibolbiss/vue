@@ -60,7 +60,7 @@ Vue.createApp({
       }
     },
     number(index) {
-      console.log(`Нажали на кнопку`);
+      console.log(`Нажали на ${index + 1}`);
       return (this.page = index + 1);
     },
   },
